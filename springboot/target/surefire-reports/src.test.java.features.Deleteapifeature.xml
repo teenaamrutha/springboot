@@ -1,0 +1,8 @@
+<testsuite failures="0" name="src/test/java/features/Deleteapifeature.feature" skipped="0" tests="1" time="0.427174">
+  <testcase classname="src.test.java.features.Deleteapifeature" name="Test delete api" time="0.427174">
+    <system-out>Given url 'http://localhost:8080/task/1/delete-task' ...................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

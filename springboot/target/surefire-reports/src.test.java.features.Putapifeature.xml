@@ -1,0 +1,24 @@
+<testsuite failures="0" name="src/test/java/features/Putapifeature.feature" skipped="0" tests="2" time="0.509562">
+  <testcase classname="src.test.java.features.Putapifeature" name="Test put api" time="0.487458">
+    <system-out>* def requestBody = ....................................................... passed
+Given url 'http://localhost:8080/task/1/update-status' .................... passed
+And request requestBody ................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.Putapifeature" name="Test put api (not found)" time="0.022104">
+    <system-out>* def requestBody = ....................................................... passed
+Given url 'http://localhost:8080/task/1/update-status' .................... passed
+And request requestBody ................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def requestBody = ....................................................... passed
+Given url 'http://localhost:8080/task/11/update-status' ................... passed
+And request requestBody ................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

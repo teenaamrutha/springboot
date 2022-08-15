@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/features/Postapifeature.feature" skipped="0" tests="1" time="0.605848">
+  <testcase classname="src.test.java.features.Postapifeature" name="Test post api" time="0.605848">
+    <system-out>* def requestBody = ....................................................... passed
+Given url 'http://localhost:8080/add-task' ................................ passed
+And request requestBody ................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

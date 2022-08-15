@@ -1,0 +1,72 @@
+<testsuite failures="3" name="src/test/java/features/Getapifeature.feature" skipped="0" tests="3" time="0.436284">
+  <testcase classname="src.test.java.features.Getapifeature" name="Get all tasks" time="0.410176">
+    <failure message="Getapifeature.feature:4 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)">Given url 'http://localhost:8080/alltasks' ................................ passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:4 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:4)
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.features.Getapifeature" name="Get a particular task" time="0.018735">
+    <failure message="Getapifeature.feature:10 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)">Given url 'http://localhost:8080/alltasks' ................................ passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:4 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:4)
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url 'http://localhost:8080/task' .................................... passed
+And path '2' .............................................................. passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:10)
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.task_name == "Bathing" ................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.features.Getapifeature" name="Get a particular task (not found)" time="0.007373">
+    <failure message="Getapifeature.feature:17 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)">Given url 'http://localhost:8080/alltasks' ................................ passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:4 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:4)
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+Given url 'http://localhost:8080/task' .................................... passed
+And path '2' .............................................................. passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:10)
+
+Then status 200 ........................................................... skipped
+* print response .......................................................... skipped
+* match response.task_name == "Bathing" ................................... skipped
+Given url 'http://localhost:8080/task' .................................... passed
+And path '10' ............................................................. passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Getapifeature.feature:17 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at ✽.When method GET (Getapifeature.feature:17)
+
+Then status 500 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>
